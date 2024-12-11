@@ -1,0 +1,212 @@
+
+.content {
+    /* padding: 1% 0; */
+    width: 100%;
+    background-color: rgb(245,245,245);
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.item {
+    /* justify-content: center; */
+    /* position: relative; */
+    /* padding-top: 20px; */
+}
+
+h1{
+    font-size: 44px;
+    /* margin-top: 62px; */
+    /* margin-bottom: 25px; */
+}
+
+.a{
+    display: flex;
+    font-size: 21vh;
+    /* text-align: center; */
+    justify-content: center;
+}
+.b{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+/* 轮播图 */
+  .el-carousel__item h3 {
+    font-size: 14px;
+    opacity: 0.75;
+    line-height: 400px;
+    margin: 0;
+  }
+/* .MovingBox{
+    height: 400px;
+} */
+
+.serviceTitleBox {
+    margin-top: 25px;
+    height: 106px;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-flow: row wrap;
+    
+    justify-content: center;
+    align-content: center;
+}
+.serviceTitle {
+    font-size: 30px;
+    color: #666;
+}
+.serviceBox {
+    height: 590px;
+    background-color: rgb(245,245,245);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    
+}
+.service {
+    text-align: center;
+    
+    transform: translateY(0);
+    transition: transform 0.3s ease-out; /* 添加过渡效果 */
+    width: 24%;
+    height: 277px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(255,255,255);
+}
+
+.service:hover {
+    transform: translateY(-10px); /* 向上浮动10像素 */
+}
+
+.service a{
+    display: block;
+}
+
+.service a:hover{
+    
+    color: #ff6700;
+}
+
+.hotTitle {
+    font-size: 30px;
+    color: #666;
+}
+.hotServiceTitleBox {
+    margin-top: 25px;
+    height: 106px;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-flow: row wrap;
+    
+    justify-content: center;
+    align-content: center;
+}
+
+.hotServiceBox {
+    height: 590px;
+    background-color: rgb(245,245,245);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.customerServiceTitleBox {
+    margin-top: 25px;
+    height: 106px;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-flow: row wrap;
+    
+    justify-content: center;
+    align-content: center;
+}
+.customerServiceTitle{
+    font-size: 30px;
+    color: #666;
+}
+
+.customerServiceBox{
+    height: 590px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.ServiceNetworkTitleBox {
+    
+    margin-top: 25px;
+    height: 106px;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-flow: row wrap;
+    
+    justify-content: center;
+    align-content: center;
+}
+
+.ServiceNetworkTitle{
+    font-size: 30px;
+    color: #666;
+}
+
+.ServiceNetworkBox{
+
+    width: 1226px;;
+    height: 360px;
+    background-color: #fff;
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: start;
+}
+
+.ServiceNetworkLeft{
+
+    width: 50%;
+}
+.ServiceNetworkLeft img{
+
+    width: 100%;
+}
+
+.ServiceNetworkRight {
+
+    width: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.AfterSalesBox{
+    display: flex;
+    flex-flow: row nowrap;
+    text-align: center;
+    color:  #b0b0b0;
+}
+
+.a_btn{
+    display: inline-block;
+    width: 158px;
+    height: 38px;
+    padding: 0;
+    text-align: center;
+    color: #b0b0b0;
+    line-height: 38px;
+    margin-top: 15px;
+}
+.a_btn:hover{
+    color: #ff6700;
+    text-decoration: none
+
+}
+ 
+

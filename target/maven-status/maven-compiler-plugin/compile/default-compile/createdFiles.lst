@@ -1,0 +1,5 @@
+com\Homework\web\register.class
+com\Homework\util\SqlSessionFactoryUtils.class
+com\Homework\pojo\User.class
+com\Homework\web\login.class
+com\Homework\mapper\UserMapper.class

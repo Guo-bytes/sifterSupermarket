@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./static/public/images/logo.png">
+    <title>主页面</title>
+
+    <!-- jquery的导包 -->
+    <script src="./static/js/jquery.js"></script>
+
+    <!-- Vue的导包,Vue导入必须在element的前面 -->
+    <script src="./static/js/vue.js"></script>
+
+    <!-- element-ui的导包 -->
+    <!-- element-ui的js导包 -->
+    <script src="./static/element-ui/lib/index.js"></script>
+    <!-- element-ui的css导包 -->
+    <link rel="stylesheet" href="./static/element-ui/lib/theme-chalk/index.css">
+
+    <!-- 公共样式导入 -->
+    <link rel="stylesheet" href="./static/public/public.css">
+    <script src="./static/public/public.js"></script>
+
+    <!-- index.html的css导包,以及js导包 -->
+    <link rel="stylesheet" href="./static/css/index.css">
+
+
+
+</head>
+
+<body>
+    <div id="app">
+        <!-- 顶部的登录栏 -->
+        <div class="top">
+            <el-row>
+                <el-col :span="24">
+                    <div class="grid-content bg-purple-dark TopBox">
+                        <span>欢迎光临小骰子的商城店铺</span>
+                        <span>
+                            <a href="./static/pages/Register.html" target="_blank">注册</a>
+                            <a href="./static/pages/Login.html" target="_blank">登录</a>
+                        </span>
+                    </div>
+                </el-col>
+            </el-row>
+            <!-- 顶部的菜单栏 -->
+            <el-menu class="TopMenusBox" :default-active="page1" class="el-menu-demo" mode="horizontal"
+                background-color="#545c64" text-color="#fff" active-text-color="#ffd04b">
+                <el-menu-item class="page1" index="1">
+                    <a href="./index.html">主页面</a>
+                </el-menu-item>
+                <el-menu-item class="page2" index="2">
+                    <a href="./static/pages/technicalSupport/technicalSupport.html">技术支持</a>
+                </el-menu-item>
+                <el-menu-item class="page3" index="3">
+                    <a href="./static/pages/shopping/shopping.html">商城</a>
+                </el-menu-item>
+                <el-menu-item class="page4" index="4">
+                    <a href="./static/pages/Mac/Mac.html">Mac</a>
+                </el-menu-item>
+                <el-menu-item class="page5" index="5">
+                    <a href="./static/pages/headset/headset.html">耳机</a>
+                </el-menu-item>
+                <el-menu-item class="page6" index="6">
+                    <a href="./static/pages/shop/Introductio.html">商品详情介绍</a>
+                </el-menu-item>
+                <el-menu-item class="page7" index="7">
+                    <a href="./static/pages/Furnture/Furnture.html">产品介绍</a>
+                </el-menu-item>
+            </el-menu>
+        </div>
+
+        <div class="first">
+            <main>
+                <div id="aa">
+                    <span></span>
+                </div>
+                <div id="bb">
+                    <span></span>
+                    <span></span>
+                </div>
+                <div id="cc">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div id="dd">
+                    <!-- nav标签中的内容默认没有显示效果，
+                nav标签只起语义的作用 -->
+                    <nav>
+                        <span></span>
+                        <span></span>
+                    </nav>
+                    <nav>
+                        <span></span>
+                        <span></span>
+                    </nav>
+
+
+                </div>
+                <div id="ee">
+                    <nav>
+                        <span></span>
+                        <span></span>
+                    </nav>
+                    <nav>
+                        <span></span>
+                    </nav>
+
+                    <nav>
+                        <span></span>
+                        <span></span>
+                    </nav>
+
+                </div>
+                <div id="ff">
+                    <nav>
+                        <span></span>
+                        <span></span>
+                    </nav>
+                    <nav>
+                        <span></span>
+                        <span></span>
+                    </nav>
+                    <nav>
+                        <span></span>
+                        <span></span>
+                    </nav>
+                </div>
+                <a href="##">asdfasdf</a>
+            </main>
+        </div>
+        <div class="second">
+            <div><a href="#">小骰子发布会即将开始</a></div>
+            <div><a href="#">开启您的小骰子时代</a></div>
+        </div>
+
+        <div class="TopText thirdTopText">
+            <div style="font-size: 5vh;">强力推出</div>
+        </div>
+        <div class="fourth">
+            <div class="fourInBox">
+                <div class="fourInBoxText getmore"> <a href="##">了解详情</a></div>
+                <div class="fourInBoxText">小骰子欢迎您的访问</div>
+
+            </div>
+        </div>
+        <div class="third">
+            <div class="thirdInBox">小骰子</div>
+            <div class="thirdInBox">引领潮流</div>
+            <div><a href="#">了解详情</a></div>
+        </div>
+
+
+
+        <!-- <div class="TopText thirdTopText">
+            <div></div>
+        </div> -->
+        <div class="fifth" style="padding-top: 5vh;">
+            <div class="InBox">
+                <span class="itemCard">
+                    <!-- <span class="cover">123123</span> -->
+                    <img src="./static/images/one.png" alt="图片加载失败" width="200" height="200"></span>
+                <span class="itemCard"><img src="./static/images/six.png" alt="图片加载失败" width="200" height="200"></span>
+            </div>
+            <div class="InBox">
+                <span class="itemCard"><img src="./static/images/two.png" alt="图片加载失败" width="200" height="200"></span>
+                <span class="itemCard"><img src="./static/images/three.png" alt="图片加载失败" width="200"
+                        height="200"></span>
+            </div>
+            <div class="InBox">
+                <span class="itemCard"><img src="./static/images/four.png" alt="图片加载失败" width="200" height="200"></span>
+                <span class="itemCard"><img src="./static/images/five.png" alt="图片加载失败" width="200" height="200"></span>
+            </div>
+        </div>
+
+        <!-- 低栏 -->
+        <div class="bottom">
+            <div class="copyright">
+                <p>+ 三小时为根据过往物流数据推算的预估时间，特殊情况下可能会延迟。该服务由第三方合作伙伴提供，需额外支付运费，且仅适用于部分商品和寄送地址，具体以结账页面为准。如果之后选择退货，运费将不会被退回。
+                    * 仅限新订阅用户。试用期结束后，每月收费 RMB 10。此优惠仅面向新订阅用户限时提供。需使用符合条件的设备连接至运行 iOS 15、iPadOS 15 或更新版本的 Apple
+                    设备。符合条件的设备配对后，需要在 3 个月内领取此优惠。目前已有符合条件的设备的用户无需购买音频产品。会员方案将自动续订，直至取消订阅。需要遵循限制条件和其他条款。
+                    需要使用 iCloud 账户和运行最新版本操作系统软件的兼容 Apple 设备。</p>
+                <p>
+                    需要使用兼容的硬件和软件。适用于支持此功能的 app 中播放的兼容内容。并非所有内容都支持杜比全景声。需要使用配备原深感摄像头的 iPhone
+                    为空间音频创建个人轮廓信息，该信息将在运行最新版本操作系统的各种 Apple 设备间同步，包括 iOS、iPadOS (今秋稍晚推出) 和 macOS (今秋稍晚推出)。
+                    支持安装有最新版本 iOS 的 iPhone 8 或后续机型、iPod touch (第七代)；安装有最新版本 iPadOS 的 12.9 英寸 iPad Pro (第二代或后续机型)、11 英寸
+                    iPad Pro、10.5 英寸 iPad Pro、iPad (第五代或后续机型)、iPad Air (第三代或后续机型)、iPad mini (第五代或后续机型)。</p>
+                <p>AirPods (第三代) 和 AirPods Pro (第二代) 可抗汗抗水，适合各种非水上运动和活动，且效果达到 IPX4 级别。抗汗抗水功能并非永久有效。</p>
+                <p> MagSafe 充电需使用兼容的 MagSafe 充电器。无线充电需使用 Qi 认证无线充电器。AirPods Pro (第二代) 充电盒还可使用 Apple Watch
+                    充电器或通过闪电接口充电。挂绳需单独购买。</p>
+                <p>电池续航时间依设备设置、环境、使用情况及诸多其他因素可能有所差异。</p>
+
+            </div>
+            <span style="width: 100%;height: 1px; background-color: rgb(66 66 66);"></span>
+            <div class="ItemShow">
+
+                <div>
+                    <span>栏目二</span>
+                    <span>栏目21</span>
+                    <span>栏目22</span>
+                    <span>栏目23</span>
+                    <span>栏目32</span>
+                    <span>栏目33</span>
+                    <span>栏目32</span>
+                    <span>栏目33</span>
+                </div>
+                <div>
+                    <span>栏目一</span>
+                    <span>栏目11</span>
+                    <span>栏目12</span>
+                    <span>栏目13</span>
+                </div>
+                <div>
+                    <span>栏目三</span>
+                    <span>栏目31</span>
+                    <span>栏目32</span>
+                    <span>栏目33</span>
+                    <span>栏目32</span>
+                    <span>栏目33</span>
+                </div>
+
+                <div>
+                    <span>栏目三</span>
+                    <span>栏目32</span>
+                    <span>栏目33</span>
+                </div>
+
+                <div>
+                    <span>栏目三</span>
+                    <span>栏目31</span>
+                    <span>栏目32</span>
+                    <span>栏目33</span>
+                </div>
+                <div>
+                    <span>栏目三</span>
+                    <span>栏目31</span>
+
+                </div>
+            </div>
+            <span style="width: 100%;height: 1px; background-color: rgb(66 66 66);"></span>
+            <div class="place">
+                更多选购方式：查找你附近的 零售店及更多门店
+            </div>
+        </div>
+
+    </div>
+    <script>
+        var vue = new Vue({
+            el: "#app",
+            // 使用的数据
+            data: function () {
+                return {
+                    page1: '1',
+                    page2: '2',
+                    page3: '3',
+                    page4: '4',
+                    page5: '5',
+                    page6: '6',
+                    page7: '7',
+                }
+            },
+            mounted() {
+
+            },
+            // 使用的方法
+            methods: {
+
+            }
+
+        })
+
+    </script>
+    <script src="./static/js/index.js"></script>
+</body>
+
+</html>

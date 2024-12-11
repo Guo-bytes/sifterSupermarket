@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../public/images/logo.png">
+    <title>技术支持</title>
+
+    <!-- jquery的导包 -->
+    <script src="../../js/jquery.js"></script>
+
+    <!-- Vue的导包,Vue导入必须在element的前面 -->
+    <script src="../../js/vue.js"></script>
+
+    <!-- element-ui的导包 -->
+    <!-- element-ui的js导包 -->
+    <script src="../../element-ui/lib/index.js"></script>
+    <!-- element-ui的css导包 -->
+    <link rel="stylesheet" href="../../element-ui/lib/theme-chalk/index.css">
+
+
+    <!-- 公共样式导入 -->
+    <link rel="stylesheet" href="../../public/public.css">
+    <script src="../../public/public.js"></script>
+
+    <!-- 技术支持的css -->
+    <link rel="stylesheet" href="./technicalSupport.css">
+
+</head>
+
+<body>
+    <div id="app">
+        <!-- 顶部的登录栏 -->
+        <div class="top">
+            <el-row>
+                <el-col :span="24">
+                    <div class="grid-content bg-purple-dark TopBox">
+                        <span>欢迎光临小骰子的商城店铺</span>
+                        <span>
+                            <a href="../Register.html" target="_blank">注册</a>
+                            <a href="../Login.html" target="_blank">登录</a>
+                        </span>
+                    </div>
+                </el-col>
+            </el-row>
+            <!-- 顶部的菜单栏 -->
+            <el-menu class="TopMenusBox" :default-active="page2" class="el-menu-demo" mode="horizontal"
+                background-color="#545c64" text-color="#fff" active-text-color="#ffd04b">
+                <el-menu-item class="page1" index="1">
+                    <a href="../../../index.html">主页面</a>
+                </el-menu-item>
+                <el-menu-item class="page2" index="2">
+                    <a href="./technicalSupport.html">技术支持</a>
+                </el-menu-item>
+                <el-menu-item class="page3" index="3">
+                    <a href="../shopping/shopping.html">商城</a>
+                </el-menu-item>
+                <el-menu-item class="page4" index="4">
+                    <a href="../Mac/Mac.html">Mac</a>
+                </el-menu-item>
+                <el-menu-item class="page5" index="5">
+                    <a href="../headset/headset.html">耳机</a>
+                </el-menu-item>
+                <el-menu-item class="page6" index="6">
+                    <a href="../shop/Introductio.html">商品详情介绍</a>
+                </el-menu-item>
+                <el-menu-item class="page7" index="7">
+                    <a href="../Furnture/Furnture.html">产品展示</a>
+                </el-menu-item>
+            </el-menu>
+        </div>
+
+        <!-- 内容部分 -->
+
+        <div class="content">
+            <div style="width: 1240px;">
+                <div class="item">
+                    <div>
+                        <span class="a">
+                            <h1>技术支持</h1>
+                        </span>
+                    </div>
+                    <!-- 轮播图 -->
+                    <div class="MovingBox">
+                        <template>
+                            <div class="block">
+                                <!-- <span class="demonstration"></span> -->
+                                <el-carousel height="250px">
+                                    <el-carousel-item v-for="(item,index) in MovingPictures" :key="index">
+                                        <img :src="item.img" alt="加载失败" style="height: 250px; width: 1240px;">
+                                    </el-carousel-item>
+                                </el-carousel>
+                            </div>
+                        </template>
+                    </div>
+                    <!-- 售后服务 -->
+                    <div class="serviceTitleBox">
+                        <h2 class="serviceTitle">自助售后服务</h2>
+                    </div>
+                    <div class="serviceBox">
+                        <div class="service" v-for="item in service">
+                            <a href="">
+                                <img :src="item.img" alt="" style="height: 66px;width: 66px;">
+                                <h3>{{item.a}}</h3>
+                                <span>{{item.b}}</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 热门服务 -->
+                    <div class="hotServiceTitleBox">
+                        <h2 class="hotTitle">热门服务</h2>
+                    </div>
+                    <div class="hotServiceBox">
+                        <div class="service" v-for="item in hotService" style="font-size: 16px;">
+                            <a href="">
+                                <img :src="item.img" alt="" style="height: 180px;width: 180px;">
+                                <h3>{{item.a}}</h3>
+                                <span>{{item.b}}</span>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- 客服 -->
+                    <div class="customerServiceTitleBox">
+                        <h2 class="customerServiceTitle">小骰子客服</h2>
+                    </div>
+                    <div class="customerServiceBox">
+                        <div class="service" v-for="item in customerService">
+                            <a href="">
+                                <img :src="item.img" alt="" style="height: 49px;width: 49px;">
+                                <h3>{{item.a}}</h3>
+                                <span>{{item.b}}</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 售后服务网点 -->
+                <div class="ServiceNetworkTitleBox">
+                    <h2 class="ServiceNetworkTitle">售后服务网点</h2>
+                </div>
+                <div class="ServiceNetworkBox">
+                    <div class="ServiceNetworkLeft">
+                        <img src="./images/serviceCenter.jpg" alt="">
+                    </div>
+                    <div class="ServiceNetworkRight">
+                        <p style=" margin-bottom: 15px; font-size: 20px; color: #000;">售后网点</p>
+                        <span
+                            style="color: #000;font-size: 16px; margin: 26px;">小骰子售后，一站式为您提供售后服务。有售后，放心购是我们的服务宗旨。</span>
+                        <div class="AfterSalesBox">
+                            <dl v-for="item in AfterSales">
+                                <dd style="margin: 0; width: 124.9px;"><img :src="item.img" alt=""></dd>
+                                <dt>{{item.a}}</dt>
+                            </dl>
+
+                        </div>
+                        <a href="" class="a_btn">网点查询 ></a>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+        <!-- 低栏 -->
+        <div class="bottom">
+            <div class="copyright">
+                <p>+ 三小时为根据过往物流数据推算的预估时间，特殊情况下可能会延迟。该服务由第三方合作伙伴提供，需额外支付运费，且仅适用于部分商品和寄送地址，具体以结账页面为准。如果之后选择退货，运费将不会被退回。
+                    * 仅限新订阅用户。试用期结束后，每月收费 RMB 10。此优惠仅面向新订阅用户限时提供。需使用符合条件的设备连接至运行 iOS 15、iPadOS 15 或更新版本的 Apple
+                    设备。符合条件的设备配对后，需要在 3 个月内领取此优惠。目前已有符合条件的设备的用户无需购买音频产品。会员方案将自动续订，直至取消订阅。需要遵循限制条件和其他条款。
+                    需要使用 iCloud 账户和运行最新版本操作系统软件的兼容 Apple 设备。</p>
+                <p>
+                    需要使用兼容的硬件和软件。适用于支持此功能的 app 中播放的兼容内容。并非所有内容都支持杜比全景声。需要使用配备原深感摄像头的 iPhone
+                    为空间音频创建个人轮廓信息，该信息将在运行最新版本操作系统的各种 Apple 设备间同步，包括 iOS、iPadOS (今秋稍晚推出) 和 macOS (今秋稍晚推出)。
+                    支持安装有最新版本 iOS 的 iPhone 8 或后续机型、iPod touch (第七代)；安装有最新版本 iPadOS 的 12.9 英寸 iPad Pro (第二代或后续机型)、11 英寸
+                    iPad Pro、10.5 英寸 iPad Pro、iPad (第五代或后续机型)、iPad Air (第三代或后续机型)、iPad mini (第五代或后续机型)。</p>
+                <p>AirPods (第三代) 和 AirPods Pro (第二代) 可抗汗抗水，适合各种非水上运动和活动，且效果达到 IPX4 级别。抗汗抗水功能并非永久有效。</p>
+                <p> MagSafe 充电需使用兼容的 MagSafe 充电器。无线充电需使用 Qi 认证无线充电器。AirPods Pro (第二代) 充电盒还可使用 Apple Watch
+                    充电器或通过闪电接口充电。挂绳需单独购买。</p>
+                <p>电池续航时间依设备设置、环境、使用情况及诸多其他因素可能有所差异。</p>
+
+            </div>
+            <span style="width: 100%;height: 1px; background-color: rgb(66 66 66);"></span>
+            <div class="ItemShow">
+
+                <div>
+                    <span>栏目二</span>
+                    <span>栏目21</span>
+                    <span>栏目22</span>
+                    <span>栏目23</span>
+                    <span>栏目32</span>
+                    <span>栏目33</span>
+                    <span>栏目32</span>
+                    <span>栏目33</span>
+                </div>
+                <div>
+                    <span>栏目一</span>
+                    <span>栏目11</span>
+                    <span>栏目12</span>
+                    <span>栏目13</span>
+                </div>
+                <div>
+                    <span>栏目三</span>
+                    <span>栏目31</span>
+                    <span>栏目32</span>
+                    <span>栏目33</span>
+                    <span>栏目32</span>
+                    <span>栏目33</span>
+                </div>
+
+                <div>
+                    <span>栏目三</span>
+                    <span>栏目32</span>
+                    <span>栏目33</span>
+                </div>
+
+                <div>
+                    <span>栏目三</span>
+                    <span>栏目31</span>
+                    <span>栏目32</span>
+                    <span>栏目33</span>
+                </div>
+                <div>
+                    <span>栏目三</span>
+                    <span>栏目31</span>
+
+                </div>
+            </div>
+            <span style="width: 100%;height: 1px; background-color: rgb(66 66 66);"></span>
+            <div class="place">
+                更多选购方式：查找你附近的 零售店及更多门店
+            </div>
+        </div>
+
+
+    </div>
+    <script>
+        var vue = new Vue({
+            el: "#app",
+            // 使用的数据
+            data: function () {
+                return {
+                    page1: '1',
+                    page2: '2',
+                    page3: '3',
+                    page4: '4',
+                    page5: '5',
+                    page6: '6',
+                    page7: '7',
+
+                    // 轮播图图片
+                    MovingPictures: [
+                        { img: "./images/01.webp" },
+                        { img: "./images/02.webp" },
+                        { img: "./images/01.webp" },
+                        { img: "./images/02.webp" },
+                    ],
+                    service: [
+                        {
+                            img: "./images/1.png",
+                            a: "申请售后",
+                            b: "小骰子售后服务中心"
+                        },
+                        {
+                            img: "./images/2.png",
+                            a: "服务进度",
+                            b: "一键查询，方便快捷"
+                        },
+                        {
+                            img: "./images/3.png",
+                            a: "售后政策",
+                            b: "条款说明，安全保障"
+                        },
+                        {
+                            img: "./images/4.png",
+                            a: "维修价格",
+                            b: "官方维修，价格透明"
+                        },
+                        {
+                            img: "./images/5.png",
+                            a: "骰子之家",
+                            b: "骰子之家门店查询"
+                        },
+                        {
+                            img: "./images/6.png",
+                            a: "骰子客服",
+                            b: "在线咨询，客服热线"
+                        },
+                        {
+                            img: "./images/7.png",
+                            a: "真伪查询",
+                            b: "官方验证，为您保障"
+                        },
+                        {
+                            img: "./images/8.png",
+                            a: "保障服务",
+                            b: "碎屏延保，双重保障"
+                        }
+                    ],
+
+                    hotService: [
+                        {
+                            img: "./images/11.jpg",
+                            a: "小骰子手机",
+                        },
+                        {
+                            img: "./images/12.jpg",
+                            a: "小骰子plus手机",
+                        },
+                        {
+                            img: "./images/13.jpg",
+                            a: "小骰子平板",
+                        },
+                        {
+                            img: "./images/14.jpg",
+                            a: "小骰子电视",
+                        },
+                        {
+                            img: "./images/15.jpg",
+                            a: "小骰子盒子",
+                        },
+                        {
+                            img: "./images/16.jpg",
+                            a: "小骰子路由器",
+                        },
+                        {
+                            img: "./images/17.jpg",
+                            a: "智能硬件",
+                        },
+                        {
+                            img: "./images/18.jpg",
+                            a: "小骰子笔记本及周边产品",
+                        },
+
+
+                    ],
+                    customerService: [
+                        {
+                            img: "./images/21.png",
+                            a: "小骰子客服资讯",
+                            b: ""
+                        },
+                        {
+                            img: "./images/22.png",
+                            a: "小骰子服务微博",
+                            b: ""
+                        },
+                        {
+                            img: "./images/23.png",
+                            a: "小骰子服务微信",
+                            b: ""
+                        },
+                        {
+                            img: "./images/24.png",
+                            a: "商城官方微信",
+                            b: ""
+                        },
+                        {
+                            img: "./images/25.png",
+                            a: "小骰子售后服务热线",
+                            b: "xxx-xxx-xxxx",
+                        },
+                        {
+                            img: "./images/26.png",
+                            a: "小骰子金融热线",
+                            b: "xxx-xxx-xxxx",
+                        },
+                        {
+                            img: "./images/27.png",
+                            a: "小骰子移动热线",
+                            b: "xxx-xxx-xxxx",
+                        },
+                        {
+                            img: "./images/28.png",
+                            a: "小骰子游戏热线",
+                            b: "xxx-xxx-xxxx",
+                        },
+
+                    ],
+                    AfterSales: [
+                        {
+                            img: "./images/serviceCenter_icon1.png",
+                            a: "预约服务"
+                        },
+                        {
+                            img: "./images/serviceCenter_icon3.png",
+                            a: "软件升级"
+                        },
+                        {
+                            img: "./images/serviceCenter_icon4.png",
+                            a: "资讯体验"
+                        },
+                        {
+                            img: "./images/serviceCenter_icon5.png",
+                            a: "面对面拆机"
+                        },
+                    ]
+
+                }
+            },
+            mounted() {
+
+            },
+            // 使用的方法
+            methods: {
+
+            }
+
+        })
+
+    </script>
+
+</body>
+
+</html>

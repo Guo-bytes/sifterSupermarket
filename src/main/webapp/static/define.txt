@@ -1,0 +1,10 @@
+css:		含有index.html的样式文件和index.js的脚本文件
+js:		Vue是js框架,JQuery也是js的框架
+element-ui:	html和css的框架
+
+image:		公共部分所使用的图片
+
+pages:		需要编辑的子页面
+
+public:     文件所需的公共部分
+另需要其它文件另建文件夹,放入相应文件即可

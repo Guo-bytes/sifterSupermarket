@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../public/images/logo.png">
+    <title>Mac</title>
+
+    <!-- jquery的导包 -->
+    <script src="../../js/jquery.js"></script>
+
+    <!-- Vue的导包,Vue导入必须在element的前面 -->
+    <script src="../../js/vue.js"></script>
+
+    <!-- element-ui的导包 -->
+    <!-- element-ui的js导包 -->
+    <script src="../../element-ui/lib/index.js"></script>
+    <!-- element-ui的css导包 -->
+    <link rel="stylesheet" href="../../element-ui/lib/theme-chalk/index.css">
+
+
+    <!-- 公共样式导入 -->
+    <link rel="stylesheet" href="../../public/public.css">
+    <script src="../../public/public.js"></script>
+
+    <!-- index.html的css导包,以及js导包 -->
+    <link rel="stylesheet" href="./Mac.css">
+    <script src="./Mac.js"></script>
+
+</head>
+
+<body>
+    <div id="app">
+        <!-- 顶部的登录栏 -->
+        <div class="top">
+            <el-row>
+                <el-col :span="24">
+                    <div class="grid-content bg-purple-dark TopBox">
+                        <span>欢迎光临小骰子的商城店铺</span>
+                        <span>
+                            <a href="../Register.html" target="_blank">注册</a>
+                            <a href="../Login.html" target="_blank">登录</a>
+                        </span>
+                    </div>
+                </el-col>
+            </el-row>
+            <!-- 顶部的菜单栏 -->
+            <el-menu class="TopMenusBox" :default-active="page4" class="el-menu-demo" mode="horizontal"
+                background-color="#545c64" text-color="#fff" active-text-color="#ffd04b">
+                <el-menu-item class="page1" index="1">
+                    <a href="../../../index.html">主页面</a>
+                </el-menu-item>
+                <el-menu-item class="page2" index="2">
+                    <a href="../technicalSupport/technicalSupport.html">技术支持</a>
+                </el-menu-item>
+                <el-menu-item class="page3" index="3">
+                    <a href="../shopping/shopping.html">商城</a>
+                </el-menu-item>
+                <el-menu-item class="page4" index="4">
+                    <a href="./Mac.html">Mac</a>
+                </el-menu-item>
+                <el-menu-item class="page5" index="5">
+                    <a href="../headset/headset.html">耳机</a>
+                </el-menu-item>
+                <el-menu-item class="page6" index="6">
+                    <a href="../shop/Introductio.html">商品详情介绍</a>
+                </el-menu-item>
+                <el-menu-item class="page7" index="7">
+                    <a href="../Furnture/Furnture.html">产品展示</a>
+                </el-menu-item>
+        </div>
+
+        <div class="main">
+            <div class="mainFour">
+                <div class="FoText">
+                    SMALL DICE
+                </div>
+                <!--   -->
+                <video id="TopVideo"  autoplay loop muted  >
+                    <!-- <source  type="video/mp4"> -->
+                    <source src="./video/video.mp4" type="video/mp4"/>
+                    Your browser doesn't support HTML5 video tag.
+                </video>
+
+            </div>
+
+            <div class="mainFirst">
+                <div class="FtextBox" style="background-color: #ffffff; ">
+                    <div class="Ftext" style="font-size: 2vh;padding-top: 2vh;">新款</div>
+                    <div class="Ftext" style="font-size: 3vh;">iPhone 14</div>
+                    <div class="Ftext" style="font-size: 4.5vh;">神技能爆满</div>
+                    <div class="Ftext" style="font-size: 3vh;">RMB 250/月起或 RMB 5999 起，还可折抵换购1。</div>
+                    <div class="Ftext" style="font-size: 3vh;"><a href="#">买它</a></div>
+                    <div class="imgBox">
+                        <img src="./images/Phone.png" alt="图片加载失败" width="50%">
+                    </div>
+
+                    <div class="FtextBox" style="background-color: #0000; color: #ffffff;">
+                        <div class="Ftext"
+                            style="font-size: 2vh;background-color: #000000;color: #ffffff;padding-top: 2vh;">新款</div>
+                        <div class="Ftext" style="font-size: 3vh;background-color: #000000;color: #ffffff;">iPhone 14
+                        </div>
+                        <div class="Ftext" style="font-size: 4.5vh;background-color: #000000;color: #ffffff;">神技能爆满
+                        </div>
+                        <div class="Ftext" style="font-size: 3vh;background-color: rgb(0, 0, 0);color: #ffffff;">RMB
+                            250/月起或 RMB 5999 起，还可折抵换购1。</div>
+                        <div class="Ftext" style="font-size: 3vh;background-color: #000000;color: #ffffff;"><a
+                                href="#">买它</a></div>
+                        <div class="imgBox" style="background-color: #000000;">
+                            <img src="./images/Phone2.jpg" alt="图片加载失败" width="50%">
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="mainSecond">
+                <div class="mainSecondRight">
+                    <div class="Stext" style="font-size: 3vh; color: rgb(0, 102, 255); margin-top: 20%;">小骰子保护您的消费合法权益
+                    </div>
+                    <div class="Stext" style="font-size: 6vh;color: rgb(127, 255, 244);">重磅实力,</div>
+                    <div class="Stext" style="font-size: 6vh;color: rgb(127, 255, 244); "> 轻松入手。</div>
+                    <div class="Stext" style="font-size: 3vh;">RMB 146/月起或 RMB 3499 起，还可折抵换购1。</div>
+                    <div class="Stext" style="font-size: 2vh;"><a href="#">购买</a><a href="##"
+                            style="background-color: transparent; color: rgba(0, 255, 255, 0.975);">进一步了解</a> </div>
+                </div>
+                <div class="mainSecondLeft"><img src="./images/test.png" alt="loading fail" width="100%"></div>
+            </div>
+        </div>
+        <div class="mainThird">
+            <div class="THText">小骰子保护您的消费合法权益</div>
+            <div class="THCardsBox">
+                <div class="THCard">
+                    <div class="THCardText">
+                        <div style="font-size: 3vh;color: rgb(66, 126, 194);">小骰子商品</div>
+                        <div>了解更多</div>
+                    </div>
+                    <div class="img"><img src="./images/test.png" alt="图片加载失败" width="50%"></div>
+
+                </div>
+                <div class="THCard">
+                    <div class="THCardText">
+                        <div style="font-size: 3vh;color: rgb(66, 126, 194);">小骰子商品</div>
+                        <div>了解更多</div>
+                    </div>
+                    <div class="img"><img src="./images/test.png" alt="图片加载失败" width="50%"></div>
+                </div>
+                <div class="THCard">
+                    <div class="THCardText">
+                        <div style="font-size: 3vh;color: rgb(66, 126, 194);">小骰子商品</div>
+                        <div>了解更多</div>
+                    </div>
+                    <div class="img"><img class="img1" src="./images/test.png" alt="图片加载失败" width="50%"></div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="endBox">
+            <div class="endcard">
+                <div class="Icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58"
+                        height="58" viewBox="0 0 58 58" fill="none">
+                        <g opacity="1" transform="translate(0 0)  rotate(0)">
+                            <mask id="bg-mask-0" fill="white">
+                                <use xlink:href="#path_0"></use>
+                            </mask>
+                            <g mask="url(#bg-mask-0)">
+                                <path id="路径 1" fill-rule="evenodd" style="fill:#898995" opacity="1"
+                                    d="M8.12566,52.4014v-21.74h19.86004v21.74zM11.7457,48.7714h12.62l-0.01,-14.5h-12.6z">
+                                </path>
+                                <path id="路径 2" fill-rule="evenodd" style="fill:#898995" opacity="1"
+                                    d="M31.7057,52.4014v-21.74h19.89v21.74zM35.3257,48.7714h12.65v-14.5h-12.65z">
+                                </path>
+                                <path id="路径 3" fill-rule="evenodd" style="fill:#898995" opacity="1"
+                                    d="M48.6657,12.5425h6.56v14.5h-23.52v-14.5h1.78l10.36,-10.85l7.75,7.23zM38.6257,12.5425h4.49l3.36,-3.62l-2.63,-2.11zM51.5957,23.4025v-7.23h-16.27v7.23z">
+                                </path>
+                                <path id="路径 4" fill-rule="evenodd" style="fill:#898995" opacity="1"
+                                    d="M27.9828,12.5439v14.49h-23.47998v-14.49h6.56998l-2.94998,-3.61999l7.76998,-7.27l10.35,10.88999zM13.2528,8.92391l3.23,3.61999h4.62l-5.21,-5.76999zM24.3628,16.1639h-16.23998v7.24h16.23998z">
+                                </path>
+                            </g>
+                        </g>
+                        <defs>
+                            <rect id="path_0" x="0" y="0" width="58" height="58" />
+                        </defs>
+                    </svg>
+                </div>
+                <div class="endText">售后服务</div>
+            </div>
+            <div class="endcard">
+                <div class="Icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58"
+                        height="58" viewBox="0 0 58 58" fill="none">
+                        <g opacity="1" transform="translate(0 0)  rotate(0)">
+                            <mask id="bg-mask-0" fill="white">
+                                <use xlink:href="#path_0"></use>
+                            </mask>
+                            <g mask="url(#bg-mask-0)">
+                                <path id="路径 1" fill-rule="evenodd" style="fill:#898995" opacity="1"
+                                    d="M8.12566,52.4014v-21.74h19.86004v21.74zM11.7457,48.7714h12.62l-0.01,-14.5h-12.6z">
+                                </path>
+                                <path id="路径 2" fill-rule="evenodd" style="fill:#898995" opacity="1"
+                                    d="M31.7057,52.4014v-21.74h19.89v21.74zM35.3257,48.7714h12.65v-14.5h-12.65z">
+                                </path>
+                                <path id="路径 3" fill-rule="evenodd" style="fill:#898995" opacity="1"
+                                    d="M48.6657,12.5425h6.56v14.5h-23.52v-14.5h1.78l10.36,-10.85l7.75,7.23zM38.6257,12.5425h4.49l3.36,-3.62l-2.63,-2.11zM51.5957,23.4025v-7.23h-16.27v7.23z">
+                                </path>
+                                <path id="路径 4" fill-rule="evenodd" style="fill:#898995" opacity="1"
+                                    d="M27.9828,12.5439v14.49h-23.47998v-14.49h6.56998l-2.94998,-3.61999l7.76998,-7.27l10.35,10.88999zM13.2528,8.92391l3.23,3.61999h4.62l-5.21,-5.76999zM24.3628,16.1639h-16.23998v7.24h16.23998z">
+                                </path>
+                            </g>
+                        </g>
+                        <defs>
+                            <rect id="path_0" x="0" y="0" width="58" height="58" />
+                        </defs>
+                    </svg>
+                </div>
+                <div class="endText">售后服务</div>
+            </div>
+            <div class="endcard">
+                <div class="Icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58"
+                        height="58" viewBox="0 0 58 58" fill="none">
+                        <g opacity="1" transform="translate(0 0)  rotate(0)">
+                            <mask id="bg-mask-0" fill="white">
+                                <use xlink:href="#path_0"></use>
+                            </mask>
+                            <g mask="url(#bg-mask-0)">
+                                <path id="路径 1" fill-rule="evenodd" style="fill:#898995" opacity="1"
+                                    d="M8.12566,52.4014v-21.74h19.86004v21.74zM11.7457,48.7714h12.62l-0.01,-14.5h-12.6z">
+                                </path>
+                                <path id="路径 2" fill-rule="evenodd" style="fill:#898995" opacity="1"
+                                    d="M31.7057,52.4014v-21.74h19.89v21.74zM35.3257,48.7714h12.65v-14.5h-12.65z">
+                                </path>
+                                <path id="路径 3" fill-rule="evenodd" style="fill:#898995" opacity="1"
+                                    d="M48.6657,12.5425h6.56v14.5h-23.52v-14.5h1.78l10.36,-10.85l7.75,7.23zM38.6257,12.5425h4.49l3.36,-3.62l-2.63,-2.11zM51.5957,23.4025v-7.23h-16.27v7.23z">
+                                </path>
+                                <path id="路径 4" fill-rule="evenodd" style="fill:#898995" opacity="1"
+                                    d="M27.9828,12.5439v14.49h-23.47998v-14.49h6.56998l-2.94998,-3.61999l7.76998,-7.27l10.35,10.88999zM13.2528,8.92391l3.23,3.61999h4.62l-5.21,-5.76999zM24.3628,16.1639h-16.23998v7.24h16.23998z">
+                                </path>
+                            </g>
+                        </g>
+                        <defs>
+                            <rect id="path_0" x="0" y="0" width="58" height="58" />
+                        </defs>
+                    </svg>
+                </div>
+                <div class="endText">售后服务</div>
+            </div>
+            <div class="endcard">
+                <div class="Icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58"
+                        height="58" viewBox="0 0 58 58" fill="none">
+                        <g opacity="1" transform="translate(0 0)  rotate(0)">
+                            <mask id="bg-mask-0" fill="white">
+                                <use xlink:href="#path_0"></use>
+                            </mask>
+                            <g mask="url(#bg-mask-0)">
+                                <path id="路径 1" fill-rule="evenodd" style="fill:#898995" opacity="1"
+                                    d="M8.12566,52.4014v-21.74h19.86004v21.74zM11.7457,48.7714h12.62l-0.01,-14.5h-12.6z">
+                                </path>
+                                <path id="路径 2" fill-rule="evenodd" style="fill:#898995" opacity="1"
+                                    d="M31.7057,52.4014v-21.74h19.89v21.74zM35.3257,48.7714h12.65v-14.5h-12.65z">
+                                </path>
+                                <path id="路径 3" fill-rule="evenodd" style="fill:#898995" opacity="1"
+                                    d="M48.6657,12.5425h6.56v14.5h-23.52v-14.5h1.78l10.36,-10.85l7.75,7.23zM38.6257,12.5425h4.49l3.36,-3.62l-2.63,-2.11zM51.5957,23.4025v-7.23h-16.27v7.23z">
+                                </path>
+                                <path id="路径 4" fill-rule="evenodd" style="fill:#898995" opacity="1"
+                                    d="M27.9828,12.5439v14.49h-23.47998v-14.49h6.56998l-2.94998,-3.61999l7.76998,-7.27l10.35,10.88999zM13.2528,8.92391l3.23,3.61999h4.62l-5.21,-5.76999zM24.3628,16.1639h-16.23998v7.24h16.23998z">
+                                </path>
+                            </g>
+                        </g>
+                        <defs>
+                            <rect id="path_0" x="0" y="0" width="58" height="58" />
+                        </defs>
+                    </svg>
+                </div>
+                <div class="endText">售后服务</div>
+            </div>
+            <div class="endcard">
+                <div class="Icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58"
+                        height="58" viewBox="0 0 58 58" fill="none">
+                        <g opacity="1" transform="translate(0 0)  rotate(0)">
+                            <mask id="bg-mask-0" fill="white">
+                                <use xlink:href="#path_0"></use>
+                            </mask>
+                            <g mask="url(#bg-mask-0)">
+                                <path id="路径 1" fill-rule="evenodd" style="fill:#898995" opacity="1"
+                                    d="M8.12566,52.4014v-21.74h19.86004v21.74zM11.7457,48.7714h12.62l-0.01,-14.5h-12.6z">
+                                </path>
+                                <path id="路径 2" fill-rule="evenodd" style="fill:#898995" opacity="1"
+                                    d="M31.7057,52.4014v-21.74h19.89v21.74zM35.3257,48.7714h12.65v-14.5h-12.65z">
+                                </path>
+                                <path id="路径 3" fill-rule="evenodd" style="fill:#898995" opacity="1"
+                                    d="M48.6657,12.5425h6.56v14.5h-23.52v-14.5h1.78l10.36,-10.85l7.75,7.23zM38.6257,12.5425h4.49l3.36,-3.62l-2.63,-2.11zM51.5957,23.4025v-7.23h-16.27v7.23z">
+                                </path>
+                                <path id="路径 4" fill-rule="evenodd" style="fill:#898995" opacity="1"
+                                    d="M27.9828,12.5439v14.49h-23.47998v-14.49h6.56998l-2.94998,-3.61999l7.76998,-7.27l10.35,10.88999zM13.2528,8.92391l3.23,3.61999h4.62l-5.21,-5.76999zM24.3628,16.1639h-16.23998v7.24h16.23998z">
+                                </path>
+                            </g>
+                        </g>
+                        <defs>
+                            <rect id="path_0" x="0" y="0" width="58" height="58" />
+                        </defs>
+                    </svg>
+                </div>
+                <div class="endText">售后服务</div>
+            </div>
+        </div>
+
+
+        <!-- 低栏 -->
+        <div class="bottom">
+            <div class="copyright">
+                <p>+ 三小时为根据过往物流数据推算的预估时间，特殊情况下可能会延迟。该服务由第三方合作伙伴提供，需额外支付运费，且仅适用于部分商品和寄送地址，具体以结账页面为准。如果之后选择退货，运费将不会被退回。
+                    * 仅限新订阅用户。试用期结束后，每月收费 RMB 10。此优惠仅面向新订阅用户限时提供。需使用符合条件的设备连接至运行 iOS 15、iPadOS 15 或更新版本的 Apple
+                    设备。符合条件的设备配对后，需要在 3 个月内领取此优惠。目前已有符合条件的设备的用户无需购买音频产品。会员方案将自动续订，直至取消订阅。需要遵循限制条件和其他条款。
+                    需要使用 iCloud 账户和运行最新版本操作系统软件的兼容 Apple 设备。</p>
+                <p>
+                    需要使用兼容的硬件和软件。适用于支持此功能的 app 中播放的兼容内容。并非所有内容都支持杜比全景声。需要使用配备原深感摄像头的 iPhone
+                    为空间音频创建个人轮廓信息，该信息将在运行最新版本操作系统的各种 Apple 设备间同步，包括 iOS、iPadOS (今秋稍晚推出) 和 macOS (今秋稍晚推出)。
+                    支持安装有最新版本 iOS 的 iPhone 8 或后续机型、iPod touch (第七代)；安装有最新版本 iPadOS 的 12.9 英寸 iPad Pro (第二代或后续机型)、11 英寸
+                    iPad Pro、10.5 英寸 iPad Pro、iPad (第五代或后续机型)、iPad Air (第三代或后续机型)、iPad mini (第五代或后续机型)。</p>
+                <p>AirPods (第三代) 和 AirPods Pro (第二代) 可抗汗抗水，适合各种非水上运动和活动，且效果达到 IPX4 级别。抗汗抗水功能并非永久有效。</p>
+                <p> MagSafe 充电需使用兼容的 MagSafe 充电器。无线充电需使用 Qi 认证无线充电器。AirPods Pro (第二代) 充电盒还可使用 Apple Watch
+                    充电器或通过闪电接口充电。挂绳需单独购买。</p>
+                <p>电池续航时间依设备设置、环境、使用情况及诸多其他因素可能有所差异。</p>
+
+            </div>
+            <span style="width: 100%;height: 1px; background-color: rgb(66 66 66);"></span>
+            <div class="ItemShow">
+
+                <div>
+                    <span>栏目二</span>
+                    <span>栏目21</span>
+                    <span>栏目22</span>
+                    <span>栏目23</span>
+                    <span>栏目32</span>
+                    <span>栏目33</span>
+                    <span>栏目32</span>
+                    <span>栏目33</span>
+                </div>
+                <div>
+                    <span>栏目一</span>
+                    <span>栏目11</span>
+                    <span>栏目12</span>
+                    <span>栏目13</span>
+                </div>
+                <div>
+                    <span>栏目三</span>
+                    <span>栏目31</span>
+                    <span>栏目32</span>
+                    <span>栏目33</span>
+                    <span>栏目32</span>
+                    <span>栏目33</span>
+                </div>
+
+                <div>
+                    <span>栏目三</span>
+                    <span>栏目32</span>
+                    <span>栏目33</span>
+                </div>
+
+                <div>
+                    <span>栏目三</span>
+                    <span>栏目31</span>
+                    <span>栏目32</span>
+                    <span>栏目33</span>
+                </div>
+                <div>
+                    <span>栏目三</span>
+                    <span>栏目31</span>
+
+                </div>
+            </div>
+            <span style="width: 100%;height: 1px; background-color: rgb(66 66 66);"></span>
+            <div class="place">
+                更多选购方式：查找你附近的 零售店及更多门店
+            </div>
+        </div>
+
+
+    </div>
+
+    <script>
+
+
+        var vue = new Vue({
+            el: "#app",
+            // 使用的数据
+            data: function () {
+                return {
+                    page1: '1',
+                    page2: '2',
+                    page3: '3',
+                    page4: '4',
+                    page5: '5',
+                    page6: '6',
+                    page7: '7',
+                }
+            },
+            mounted() {
+
+            },
+            // 使用的方法
+            methods: {
+
+            }
+
+        })
+
+    </script>
+
+    <script>
+        // var myVid = document.getElementById("TopVideo");
+        // console.log(myVid)
+        // myVid.autoplay = true;
+        // myVid.load(); 
+    </script>
+
+</body>
+
+</html>

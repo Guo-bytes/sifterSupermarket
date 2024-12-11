@@ -1,0 +1,264 @@
+.content {
+    /* padding: 1% 0; */
+    width: 100%;
+    /* background-color: rgb(245,245,245); */
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-content: center;
+}
+
+#v1 {
+    width: 1520px;
+    height: 820px;
+    margin-top: 21px;
+}
+
+.video{
+    position: relative;
+    border-radius: 20px;
+}
+
+
+.video h2{
+    height: 635px;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 80px;
+    color: rgb(245, 245, 247);
+}
+
+.video p{
+    height: 850px;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 21px;
+    color: rgb(245, 245, 247);
+}
+
+.one {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    width: 1580px;
+    height: 680px;
+    background-color: rgb(255, 255, 255); 
+    border-radius: 36px;
+    background-image: url("./images/one.jpg"); 
+    background-repeat: no-repeat;  
+    background-position: center;
+    overflow:hidden;
+    text-align: center;
+    position: relative;
+}
+
+.one h2{
+    font-size: 120px;
+    font-weight: 600;
+    margin: 0;
+}
+
+
+.one p{
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.two{
+    position: relative;
+    margin-top: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    width: 1580px;
+    height: 680px;
+    background-color: rgb(255, 255, 255); 
+    border-radius: 36px;
+    background-repeat: no-repeat;  
+    background-position: center;
+    overflow:hidden;
+    text-align: center;
+    background-image: url("./images/two_1.png"),
+                      url("./images/two_2.png");
+    /* background-position:top 50px right 80px,40px 40px,top center; */
+    background-position: top 55px right 883px,869px 185px,top center;
+    position: relative;
+}
+
+#two_1{
+    position: absolute;
+    top: 137px;
+    left: -143px;
+}
+
+#two_2{
+    position: absolute;
+    top: 374px;
+    right: -90px;
+}
+
+.two h2{
+    font-size: 120px;
+    font-weight: 600;
+    margin: 0;
+}
+
+
+.two p{
+    font-size: 21px;
+    font-weight: 700;
+}
+
+
+.three {
+    position: relative;
+    margin-top: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    width: 1580px;
+    height: 680px;
+    background-color: rgb(255, 255, 255); 
+    border-radius: 36px;
+    background-repeat: no-repeat;  
+    background-position: center;
+    overflow:hidden;
+    text-align: center;
+    background-image: url("./images/three_1.jpg");
+    background-size: 1112px,156px;
+    position: relative;
+}
+
+.three P{
+    font-size: 21px;
+    font-weight: 700;
+    position: absolute;
+    left: 736px;
+    bottom: 196px;
+}
+
+.btn {
+    width: 74px;
+    height: 44px;
+    background-color: #0071e3;
+    border-radius: 20px;
+    border: 0;
+    font-size: 17px;
+    color: #fff;
+}
+
+.buy{
+    text-align: center;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 48px;
+    left: 684px;
+}
+.buy2 {
+    position: absolute;
+    bottom: 104px;
+    left: 650px;
+    text-align: center;
+}
+
+.btn2 {
+    width: 74px;
+    height: 44px;
+    background-color: #fff;
+    border-radius: 20px;
+    border: 0;
+    font-size: 17px;
+    color: #000;
+}
+
+.spa2{
+    color: #fff;
+    margin-left: 13px;
+    font-size: 21px;
+}
+.spa{
+    color: #0071e3;
+    margin-left: 13px;
+    font-size: 21px;
+}
+
+.spa:hover{
+    color: #ff6700;
+}
+
+.spa2:hover{
+    color: #ff6700;
+}
+
+.btn:hover{
+    color: #000;
+}
+
+.btn2:hover {
+    color: #0071e3;
+}
+
+.contact{
+    width: 1692px;
+    /* height: 484px; */
+    flex-flow: row wrap;
+    display: flex;
+    /* background-color: #0071e3; */
+    justify-content: center;
+    align-content: center;
+}
+.contactBox {
+    width: 1700px;
+    display: flex;
+    /* background-color: #0071e3; */
+    justify-content: space-evenly;
+    
+}
+.contact1{
+    width: 383px;
+    height: 484px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+
+}
+.contact1 div{
+    font-size: 30px;
+    display: flex;
+    width: 383px;
+    height: 54px;
+    text-align: center;
+}
+
+/* .contactTitleBox{
+    
+}  */
+
+.contact1 h4{
+   margin: 25px;
+}
+
+.contact1 span {
+    font-size: 55px;
+    margin-top: 3px;
+    margin-left: 73px;
+}
+.contactTitleBox h3{
+    font-size: 50px;
+}

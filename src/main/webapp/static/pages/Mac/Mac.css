@@ -1,0 +1,213 @@
+.main {
+
+    /* padding-top: 12vh; */
+
+}
+
+
+@keyframes baGround {
+    0% {
+        background-color: #0f7dd8;
+    }
+
+    25% {
+        background-color: #0fd8b6;
+    }
+
+    50% {
+        background-color: #0fd81c;
+    }
+
+    75% {
+        background-color: #d8ba0f;
+    }
+
+    100% {}
+}
+
+
+
+.mainFirst {
+
+    width: 100%;
+    /* height: 50vh; */
+
+    margin-top: 2vh;
+
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.FtextBox {}
+
+.Ftext {
+    padding: 0.9vh 0;
+    text-align: center;
+}
+
+.Ftext a,
+.Stext a {
+    background-color: #1faec4;
+    padding: 3px 10px;
+    border-radius: 10px;
+}
+
+.imgBox {
+    display: flex;
+    justify-content: center;
+}
+
+.imgBox img {}
+
+.mainSecond {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.mainSecondRight {
+    width: 45%;
+}
+
+.mainSecondLeft {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+.Stext {
+    text-align: center;
+    padding: 0.5vh;
+}
+
+.mainThird {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 0% 2%;
+
+    margin-bottom: 5vh;
+}
+
+.THText {
+    text-align: center;
+    font-size: 4vh;
+    padding-bottom: 2%;
+}
+
+.THCardsBox {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+
+    height: 45vh;
+}
+
+.THCard {
+    background-color: #fcfcfc;
+    padding: 1% 2%;
+    width: 25%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #c7c7c7,
+        -2px -2px 5px #b1b1b1;
+
+    transition: 1s;
+}
+
+.THCard:hover {
+    background-color: #282d30;
+    padding: 1% 2%;
+    width: 30%;
+    color: #ffff;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+
+    border-radius: 10px;
+    box-shadow: 7px 7px 15px #636363,
+        -7px -7px 15px #b1b1b1;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.THCard {
+    animation: OPshow 1s;
+    animation-fill-mode: both;
+    animation-duration: 1s;
+
+}
+
+.THCardText {
+    min-width: 100px;
+    margin-top: 10vh;
+
+}
+.THCardText div{
+        text-align: center;
+    padding-top: 2vh;
+}
+.THCard .img {
+    margin: 5vh 0 3vh 0;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes OPshow {
+    0% {
+        opacity: 0.1;
+    }
+
+    25% {
+        opacity: 0.25;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    75% {
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.mainFour {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.FoText {
+    font-size: 5vh;
+    text-align: center;
+    color: rgb(65, 147, 218);
+
+    margin-bottom: 4vh;
+}
+.endBox{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+}
+.endcard{
+    padding: 3%;
+}
+.endcard .endText{
+    color: #b1b1b1;
+}
+.endcard:hover .endText{
+    color: #070707;
+}
+.endcard:hover{
+    background-color: #cfcfcf
+}

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../public/images/logo.png">
+    <title>登录</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            overflow: hidden;
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(to bottom, #a4a7ac, #85c0ed);
+        }
+
+        section .color {
+            position: absolute;
+            filter: blur(150px);
+        }
+
+        section .color:nth-child(1) {
+            top: -350px;
+            width: 600px;
+            height: 600px;
+            background: #a56183;
+            margin-right: 80vh;
+        }
+
+        section .color:nth-child(2) {
+            margin-left: 15vh;
+            bottom: -150px;
+            left: 100px;
+            width: 500px;
+            height: 500px;
+            background: #9f9e67;
+        }
+
+        section .color:nth-child(3) {
+            bottom: -50px;
+            right: 100px;
+            width: 300px;
+            height: 300px;
+            background: #73afbd;
+            margin-right: 90vh;
+        }
+
+        .box {
+            position: relative;
+        }
+
+        .box .square {
+            position: absolute;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-right: 1px solid rgba(255, 255, 255, 0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            animation: animate 10s linear infinite;
+            animation-delay: calc(-1s*var(--i));
+        }
+
+        /* 动画 */
+        @keyframes animate {
+
+            0%,
+            100% {
+                transform: translateY(-40px);
+            }
+
+            50% {
+                transform: translate(-40px);
+            }
+        }
+
+        .box .square:nth-child(1) {
+            top: -50px;
+            right: -60px;
+            width: 100px;
+            height: 100px;
+            margin-right: 80vh;
+        }
+
+        .box .square:nth-child(2) {
+            top: 150px;
+            left: 1015px;
+            width: 120px;
+            height: 120px;
+            z-index: 2;
+        }
+
+        .box .square:nth-child(3) {
+            bottom: 50px;
+            right: -60px;
+            width: 80px;
+            height: 80px;
+            z-index: 2;
+            margin-right: 90vh;
+        }
+
+        .box .square:nth-child(4) {
+            bottom: -80px;
+            left: -259px;
+            width: 50px;
+            height: 50px;
+        }
+
+        .box .square:nth-child(5) {
+            top: 132px;
+            ;
+            left: 130px;
+            width: 80px;
+            height: 90px;
+        }
+
+        .box .square:nth-child(6) {
+            top: 40px;
+            left: -120px;
+            width: 60px;
+            height: 65px;
+        }
+
+        .box .square:nth-child(7) {
+            top: -56px;
+            left: 829px;
+            width: 60px;
+            height: 60px;
+        }
+
+        .box .square:nth-child(8) {
+            top: -9px;
+            left: -290px;
+            width: 60px;
+            height: 60px;
+        }
+
+        .container {
+            position: relative;
+            width: 400px;
+            min-height: 400px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-right: 1px solid rgba(255, 255, 255, 0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            margin-left: 50vh;
+        }
+
+        .form {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            padding: 40px;
+        }
+
+        .form h2 {
+            position: relative;
+            color: #fff;
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 40px;
+        }
+
+        .form h2::before {
+            content: '';
+            position: absoulute;
+            left: 0;
+            bottom: -10px;
+            width: 80px;
+            height: 4px;
+            background: #fff;
+        }
+
+        .form .inputBox {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .form .inputBox input {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            outline: none;
+            padding: 10px 20px;
+            border-radius: 35px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-right: 1px solid rgba(255, 255, 255, 0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 16px;
+            letter-spacing: 1px;
+            color: #ffff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .form .inputBox input::placeholder {
+            color: #fff;
+        }
+
+        .form .inputBox input[type="submit"] {
+            background: #fff;
+            color: #666;
+            max-width: 100px;
+            cursor: pointer;
+            margin-bottom: 20px;
+            font-style: 600;
+        }
+
+        .forget {
+            margin-top: 5px;
+            color: #fff;
+        }
+
+        .forget a {
+            color: #ffff;
+            font-weight: 600;
+        }
+
+        .name1 {
+            color: #fff;
+            font-size: 5vh;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .name2 {
+            color: #00000092;
+            font-size: 3vh;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .topText{
+            margin-left: 1px;
+            width: 30vh;
+            justify-content: center;
+        }
+        .topText div{
+            text-align: center;
+        }
+    </style>
+    <script src="../js/vue.js"></script>
+    <script src="../js/jquery.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <section>
+            <div class="topText">
+                <h1 class="name1" >欢迎登陆到小骰子商店</h1>
+                <h3 class="name2" >SMALL DICE</h3>
+            </div>
+
+
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="box">
+
+
+
+                <div class="square" style="--i:0;"></div>
+                <div class="square" style="--i:1;"></div>
+                <div class="square" style="--i:2;"></div>
+                <div class="square" style="--i:3;"></div>
+                <div class="square" style="--i:4;"></div>
+
+                <div class="square" style="--i:5;"></div>
+                <div class="square" style="--i:6;"></div>
+                <div class="square" style="--i:7;"></div>
+                <div class="container">
+                    <div class="form">
+                        <h2>Login form</h2>
+                        <form>
+                            <!-- <div class="inputBox">
+                            <input type="text" placeholder="Cell-phone number">
+                        </div> -->
+                            <div class="inputBox">
+                                <input type="text" placeholder="Username" v-model="username">
+                            </div>
+                            <div class="inputBox">
+                                <input type="password" placeholder="password" v-model="password">
+                            </div>
+                            <!-- <div class="inputBox">
+                                <input type="password" placeholder="password">
+                        </div> -->
+                            <div class="inputBox">
+                                <input type="button" value="Login" @click="Login">
+                            </div>
+                            <!-- <p class="forget">Forget password ? <a-->
+                            <!-- href="#">Click Here</a></p> -->
+                            <p class="forget">Don't have an account ? <a href="./Register.html">Sign up</a></p>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        new Vue({
+            el:"#app",
+            data:{
+                username:"",
+                password:"",
+            },
+            methods:{
+                Login() {
+
+                    var that = this;
+                    $.get(
+                        "http://localhost:8080/WebHomework/Login",
+                        {
+                            username:that.username,
+                            password: that.password,
+                        },
+                        function (resp){
+                            if (resp=="login OK"){
+                                window.location.href="../../index.html";
+                            }else {
+                                alert("账号或密码错误！");
+                            }
+                        }
+                    )
+                }
+            }
+        })
+    </script>
+
+</body>
+
+</html>

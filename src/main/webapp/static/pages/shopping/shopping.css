@@ -1,0 +1,157 @@
+.content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+}
+
+.content1{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    width: 1340px;
+}
+
+.iptBox {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 500px;
+    margin-top: 20px;
+}
+
+.Buy {
+    float: right;
+    position: fixed;
+    top: 150px;
+    right: 20px;
+}
+
+.Buy button {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+}
+
+.MovingPictureBox {
+
+    margin-top: 20px;
+    width: 100%;
+}
+
+
+.BuyCar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0px;
+}
+
+.Phone_content{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.content_left{
+    box-shadow: none;
+    transition: box-shadow 0.3s ease-out; /* 添加过渡效果 */
+}
+.content_left:hover{
+    transform: translateY(-10px); /* 向上浮动10像素 */
+}
+
+.content_right{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+}
+.content_right>span{
+
+    transform: translateY(0);
+    transition: transform 0.3s ease-out;
+
+      /* 设置初始状态 */
+      box-shadow: none;
+      transition: box-shadow 0.3s ease-out; /* 添加过渡效果 */
+
+    border-radius: 15px;
+    /* background-color: aqua; */
+    background-color: rgb(255,255,255);
+    display: flex;
+    flex-flow: row wrap;
+    flex-wrap: nowrap;
+    justify-content: space-evenly ;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content_right>span:hover{
+    transform: translateY(-10px); /* 向上浮动10像素 */
+
+    box-shadow: 0 0 2.5px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+}
+
+.content_right h3{
+    margin:10px
+}
+
+.content_right p{
+    margin-top: 0;
+    margin-bottom: 10px;
+        font-size: 16px;
+    color: #b0b0b0;
+}
+
+.content_right span{
+    margin-bottom: 15px;
+}
+
+.content_right span:hover span{
+    color:#ff6700;
+}
+
+.PhoneTitle{
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.Phone_left{
+    padding: 5px;
+    font-size: 21px;
+    font-weight: 500;
+}
+.Phone_right {
+    float: right;
+    padding-right: 20px;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.Phone_right:hover {
+    color: #ff6700;
+}
+
+.ComputerTitle{
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.Computer_left{
+    padding: 5px;
+    font-size: 21px;
+    font-weight: 500;
+}
+.Computer_right {
+    float: right;
+    padding-right: 20px;
+    font-size: 21px;
+    font-weight: 500;
+}
+.Computer_right:hover {
+    color: #ff6700;
+}
+

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../public/images/logo.png">
+    <title>商品详情介绍</title>
+
+    <!-- jquery的导包 -->
+    <script src="../../js/jquery.js"></script>
+
+    <!-- Vue的导包,Vue导入必须在element的前面 -->
+    <script src="../../js/vue.js"></script>
+
+    <!-- element-ui的导包 -->
+    <!-- element-ui的js导包 -->
+    <script src="../../element-ui/lib/index.js"></script>
+    <!-- element-ui的css导包 -->
+    <link rel="stylesheet" href="../../element-ui/lib/theme-chalk/index.css">
+
+
+    <!-- 公共样式导入 -->
+    <link rel="stylesheet" href="../../public/public.css">
+    <script src="../../public/public.js"></script>
+
+    <link rel="stylesheet" href="introduction.css">
+</head>
+
+<body>
+
+    <div id="app">
+        <!-- 顶部的登录栏 -->
+        <div class="top">
+            <el-row>
+                <el-col :span="24">
+                    <div class="grid-content bg-purple-dark TopBox">
+                        <span>欢迎光临小骰子的商城店铺</span>
+                        <span>
+                            <a href="../Register.html" target="_blank">注册</a>
+                            <a href="../Login.html" target="_blank">登录</a>
+                        </span>
+                    </div>
+                </el-col>
+            </el-row>
+            <!-- 顶部的菜单栏 -->
+            <el-menu class="TopMenusBox" :default-active="page6" class="el-menu-demo" mode="horizontal"
+                background-color="#545c64" text-color="#fff" active-text-color="#ffd04b">
+                <el-menu-item class="page1" index="1">
+                    <a href="../../../index.html">主页面</a>
+                </el-menu-item>
+                <el-menu-item class="page2" index="2">
+                    <a href="./technicalSupport.html">技术支持</a>
+                </el-menu-item>
+                <el-menu-item class="page3" index="3">
+                    <a href="../shopping/shopping.html">商城</a>
+                </el-menu-item>
+                <el-menu-item class="page4" index="4">
+                    <a href="../Mac/Mac.html">Mac</a>
+                </el-menu-item>
+                <el-menu-item class="page5" index="5">
+                    <a href="../headset/headset.html">耳机</a>
+                </el-menu-item>
+                <el-menu-item class="page6" index="6">
+                    <a href="./Introductio.html">商品详情介绍</a>
+                </el-menu-item>
+                <el-menu-item class="page7" index="7">
+                    <a href="../Furnture/Furnture.html">产品展示</a>
+                </el-menu-item>
+            </el-menu>
+        </div>
+
+        <div class="main">
+            <!--白色导航开始-->
+            <div class="box-top">
+                <div class="wrap">
+                    <div class="top-left">
+                        <span style="font-size: large" class="left-name1">Redmi Note12 Turbo</span>
+                        <span class="name0">|</span>
+                        <span class="left-name2">Redmi Note12 Pro 极速版</span>
+                    </div>
+                    <div class="top-right">
+                        <a class="right-name">概述页</a>
+                        <span class="name0">|</span>
+                        <a class="right-name">参数页</a>
+                        <span class="name0">|</span>
+                        <a class="right-name">F码通道</a>
+                        <span class="name0">|</span>
+                        <a class="right-name">咨询客服</a>
+                        <span class="name0">|</span>
+                        <a class="right-name">用户评价</a>
+                    </div>
+                </div>
+                <!--白色导航结束-->
+                <div class="content">
+                    <div class="content-top">
+                        <div class="img-left">
+                            <img src="image/pms_1679982565.11927388.png" height="800" width="800" />
+                        </div>
+                        <div class="product-don">
+                            <div class="product-don-top">
+                                <h2 class="product-don-top-name">RedmiNote 12 Turbo</h2>
+                                <p class="xuanchuan">[骰金兑卷至高优惠400元，至高享6期分期免息] 是真的实惠</p>
+                                <p class="guanggaoname">小骰子自营</p>
+                                <p class="jiaogeneme">2399元</p>
+                            </div>
+                            <div class="product-don-zhong">
+                                <h3 class="product-don-zhong-name">选择版本</h3>
+                                <div class="product-don-da">
+                                    <div class="product-don-xiao">
+                                        <p class="guige">12+512GB</p>
+                                    </div>
+                                    <div class="product-don-xiao">
+                                        <p class="guige">12+256GB</p>
+                                    </div>
+                                    <div class="product-don-xiao">
+                                        <p class="guige">8+256GB</p>
+                                    </div>
+                                    <div class="product-don-xiao">
+                                        <p class="guige">8+128GB</p>
+                                    </div>
+                                </div>
+                                <div class="paoduct-yanse">
+                                    <h3 class="product-don-zhong-name">选择颜色</h3>
+                                    <div class="product-don-xiao">
+                                        <p class="guige">冰雨白</p>
+                                    </div>
+                                    <div class="product-don-xiao">
+                                        <p class="guige">碳纤黑</p>
+                                    </div>
+                                    <dzongjiiv class="product-don-xiao">
+                                        <p class="guige">星海蓝</p>
+                                    </dzongjiiv>
+                                    <div class="product-don-xiao">
+                                        <p class="guige">少女粉</p>
+                                    </div>
+                                </div>
+                                <div class="goumai">
+                                    <p class="goumai-name1">Redmi Note 12 Turbo 16GB+512GB</p>
+                                    <h4 class="zongji">总计：2399元</h4>
+                                </div>
+
+                                <div class="dandu">
+                                    <div class="goumai-anjian">
+                                        <p class="goumai-anjian-name">加入购物车</p>
+                                    </div>
+                                    <div class="xihuan-anjian">
+                                        <p class="goumai-anjian-name">喜欢</p>
+                                    </div>
+                                    <div class="xiaozibufen">
+                                        <p class="xiaozi">*小骰子自营 *小骰子发货*7天无理由退货 *7天价格保护</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-bottom">
+                        <h4 class="jiagebaohu">价格说明</h4>
+                        <p class="jieshao">
+                            划线价：商品展示的划横线价格为参考价，该价格可能是商品首次上市销售价、品牌专柜标价、商品吊牌价或由品牌供应商提供的正品零售价（如厂商指导价、建议零售价等）
+                            由于地区、时间的差异性和市场行情的波动，品牌专柜标价、商品吊牌价等可能会与您购物时展示的不一致，该价格并非原价、仅供参考。
+                        </p>
+                        <p class="xiaoshoujia">
+                            其他：商品详情页（含主图）以图片或文字形式标注的到手价、券后价、众筹价、尝鲜价等价格可能是商品在使用优惠券或参与特定优惠活动或在特定时间段等情形下，由系统根据相应规则计算得出的预
+                            估单品结算价格。</p>
+                    </div>
+                </div>
+                <div class="box-bottom">
+                    <div class="heziname">
+                        <h5 class="hezi-name">预约售后服务</h5>
+                    </div>
+                    <div class="heziname">
+                        <h5 class="hezi-name">7天无理由退货</h5>
+                    </div>
+                    <div class="heziname">
+                        <h5 class="hezi-name">15天免费换货</h5>
+                    </div>
+                    <div class="heziname">
+                        <h5 class="hezi-name">满69包邮</h5>
+                    </div>
+                    <div class="heziname">
+                        <h5 class="hezi-name">1100余家售后网点</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+        <!-- 低栏 -->
+        <div class="bottom">
+            <div class="copyright">
+                <p>+ 三小时为根据过往物流数据推算的预估时间，特殊情况下可能会延迟。该服务由第三方合作伙伴提供，需额外支付运费，且仅适用于部分商品和寄送地址，具体以结账页面为准。如果之后选择退货，运费将不会被退回。
+                    * 仅限新订阅用户。试用期结束后，每月收费 RMB 10。此优惠仅面向新订阅用户限时提供。需使用符合条件的设备连接至运行 iOS 15、iPadOS 15 或更新版本的 Apple
+                    设备。符合条件的设备配对后，需要在 3 个月内领取此优惠。目前已有符合条件的设备的用户无需购买音频产品。会员方案将自动续订，直至取消订阅。需要遵循限制条件和其他条款。
+                    需要使用 iCloud 账户和运行最新版本操作系统软件的兼容 Apple 设备。</p>
+                <p>
+                    需要使用兼容的硬件和软件。适用于支持此功能的 app 中播放的兼容内容。并非所有内容都支持杜比全景声。需要使用配备原深感摄像头的 iPhone
+                    为空间音频创建个人轮廓信息，该信息将在运行最新版本操作系统的各种 Apple 设备间同步，包括 iOS、iPadOS (今秋稍晚推出) 和 macOS (今秋稍晚推出)。
+                    支持安装有最新版本 iOS 的 iPhone 8 或后续机型、iPod touch (第七代)；安装有最新版本 iPadOS 的 12.9 英寸 iPad Pro (第二代或后续机型)、11 英寸
+                    iPad Pro、10.5 英寸 iPad Pro、iPad (第五代或后续机型)、iPad Air (第三代或后续机型)、iPad mini (第五代或后续机型)。</p>
+                <p>AirPods (第三代) 和 AirPods Pro (第二代) 可抗汗抗水，适合各种非水上运动和活动，且效果达到 IPX4 级别。抗汗抗水功能并非永久有效。</p>
+                <p> MagSafe 充电需使用兼容的 MagSafe 充电器。无线充电需使用 Qi 认证无线充电器。AirPods Pro (第二代) 充电盒还可使用 Apple Watch
+                    充电器或通过闪电接口充电。挂绳需单独购买。</p>
+                <p>电池续航时间依设备设置、环境、使用情况及诸多其他因素可能有所差异。</p>
+
+            </div>
+            <span style="width: 100%;height: 1px; background-color: rgb(66 66 66);"></span>
+            <div class="ItemShow">
+
+                <div>
+                    <span>栏目二</span>
+                    <span>栏目21</span>
+                    <span>栏目22</span>
+                    <span>栏目23</span>
+                    <span>栏目32</span>
+                    <span>栏目33</span>
+                    <span>栏目32</span>
+                    <span>栏目33</span>
+                </div>
+                <div>
+                    <span>栏目一</span>
+                    <span>栏目11</span>
+                    <span>栏目12</span>
+                    <span>栏目13</span>
+                </div>
+                <div>
+                    <span>栏目三</span>
+                    <span>栏目31</span>
+                    <span>栏目32</span>
+                    <span>栏目33</span>
+                    <span>栏目32</span>
+                    <span>栏目33</span>
+                </div>
+
+                <div>
+                    <span>栏目三</span>
+                    <span>栏目32</span>
+                    <span>栏目33</span>
+                </div>
+
+                <div>
+                    <span>栏目三</span>
+                    <span>栏目31</span>
+                    <span>栏目32</span>
+                    <span>栏目33</span>
+                </div>
+                <div>
+                    <span>栏目三</span>
+                    <span>栏目31</span>
+
+                </div>
+            </div>
+            <span style="width: 100%;height: 1px; background-color: rgb(66 66 66);"></span>
+            <div class="place">
+                更多选购方式：查找你附近的 零售店及更多门店
+            </div>
+        </div>
+
+    <script>
+
+
+        var vue = new Vue({
+            el: "#app",
+            // 使用的数据
+            data: function () {
+                return {
+                    page1: '1',
+                    page2: '2',
+                    page3: '3',
+                    page4: '4',
+                    page5: '5',
+                    page6: '6',
+                    page7: '7',
+                }
+            },
+            mounted() {
+
+            },
+            // 使用的方法
+            methods: {
+
+            }
+
+        })
+
+    </script>
+
+    <script>
+    // var myVid = document.getElementById("TopVideo");
+    // console.log(myVid)
+    // myVid.autoplay = true;
+    // myVid.load(); 
+    </script>
+
+</body>
+
+</html>
+</body>
+
+</html>
